@@ -40,7 +40,10 @@ brew install kubectl
 
 git config --global user.name "Daniel McSheehy"
 git config --global user.email "danielmcsheehy@protonmail.com"
+git config --global credential.helper store
+git config --global credential.helper cache
 git config --global color.ui true
+
 
 ssh-keygen -t rsa -C "danielmcsheehy@protonmail.com"
 # paste output to https://github.com/settings/keys
