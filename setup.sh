@@ -9,6 +9,8 @@ brew install zsh
 brew install bat
 brew install rbenv
 
+
+
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -34,5 +36,13 @@ rm -rf ptSh
 # kubectl 
 brew install kubectl 
 
-## nerd font complete example
+## TODO nerd font complete example
+
+git config --global user.name "Daniel McSheehy"
+git config --global user.email "danielmcsheehy@protonmail.com"
+git config --global color.ui true
+
+ssh-keygen -t rsa -C "danielmcsheehy@protonmail.com"
+# paste output to https://github.com/settings/keys
+pbcopy < ~/.ssh/id_rsa.pub 
 
