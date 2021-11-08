@@ -46,6 +46,6 @@ git config --global color.ui true
 
 
 ssh-keygen -t rsa -C "danielmcsheehy@protonmail.com"
-# paste output to https://github.com/settings/keys
+# paste output to -> https://github.com/settings/keys
 pbcopy < ~/.ssh/id_rsa.pub 
 
