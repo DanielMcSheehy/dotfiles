@@ -4,7 +4,7 @@ alias c="cd ~/code"
 alias cat="bat"
 
 alias zsh="vim ~/.zshrc"
-alias setting="vim  /Users/dsm/.oh-my-zsh/custom/aliases.zsh"
+alias setting="vim  ~/.oh-my-zsh/custom/aliases.zsh"
 
 #Colorls: 
 alias ls="ptls"
