@@ -12,7 +12,6 @@ alias setting="vim  ~/.oh-my-zsh/custom/aliases.zsh"
 # alias mkdir="ptmkdir"
 
 #NPM: 
-alias n="npm start"
 
 #AWS: 
 export AWS_DEFAULT_REGION="us-west-2"

@@ -33,7 +33,7 @@ brew install coreutils
 
 # enable mac fingerprint for sudo
 sudo su root -c 'chmod +w /etc/pam.d/sudo && echo "auth       sufficient     pam_tid.so\n$(cat /etc/pam.d/sudo)" > /etc/pam.d/sudo && chmod -w /etc/pam.d/sudo'
-
+# install n and node 18.17.1
 # git clone https://github.com/jszczerbinsky/ptSh
 # cd ptSh
 # make install
