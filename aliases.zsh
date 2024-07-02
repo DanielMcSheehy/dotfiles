@@ -37,7 +37,7 @@ alias branchFilter="git for-each-ref --sort=-committerdate refs/heads/"
 alias rebase="git rebase -s recursive -X theirs master && git push --force"
 function squash(){ git reset --soft HEAD~$1 && git commit }
 
-
+function adminPostgres(){PGPASSWORD='admin' psql -h localhost -U formant admin}
 
 
 # reddit downloader
