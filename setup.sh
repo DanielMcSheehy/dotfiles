@@ -11,6 +11,7 @@ gh auth login
 # brew install zsh
 brew install bat
 brew install rbenv
+brew install postgresql
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -29,6 +30,9 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my
 
 brew install bash 
 brew install coreutils
+
+# enable mac fingerprint for sudo
+sudo su root -c 'chmod +w /etc/pam.d/sudo && echo "auth       sufficient     pam_tid.so\n$(cat /etc/pam.d/sudo)" > /etc/pam.d/sudo && chmod -w /etc/pam.d/sudo'
 
 # git clone https://github.com/jszczerbinsky/ptSh
 # cd ptSh
