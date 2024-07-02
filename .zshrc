@@ -5,6 +5,9 @@
 export ZSH="/Users/danielmcsheehy/.oh-my-zsh"
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
+# source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 plugins=(zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -18,8 +21,9 @@ eval "$(rbenv init -)"
 #ptls
 # export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+# source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.oh-my-zsh/custom/custom-theme.zsh
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 ZSH_THEME=powerlevel10k/powerlevel10k
 
 RED="\e[91m"
@@ -42,9 +46,6 @@ export GOPATH="${HOME}/go"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 export GO111MODULE=on
 
-# opam configuration
-test -r ~/.opam/opam-init/init.zsh && . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
-source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export GIT_TERMINAL_PROMPT=1
 export GITHUB_USER="Daniel McSheehy"
@@ -52,5 +53,5 @@ export GITHUB_USER="Daniel McSheehy"
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
-source <(kubectl completion zsh)
-complete -o nospace -C /usr/local/bin/terraform terraformsource /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+# complete -o nospace - /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
