@@ -39,9 +39,9 @@ brew install node
 brew install n
 
 sudo n 18.17.1
+brew uninstall node
 
-export npm_config_python=/usr/bin/python
-npm install -g @bazel/bazelisk
+npm install -g @bazel/bazelisk yarn lerna
 
 # enable mac fingerprint for sudo
 sudo su root -c 'chmod +w /etc/pam.d/sudo && echo "auth       sufficient     pam_tid.so\n$(cat /etc/pam.d/sudo)" > /etc/pam.d/sudo && chmod -w /etc/pam.d/sudo'

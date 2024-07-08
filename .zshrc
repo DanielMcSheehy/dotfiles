@@ -10,6 +10,8 @@ source $ZSH/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 plugins=(zsh-syntax-highlighting)
 
+export npm_config_python=/usr/bin/python
+
 source $ZSH/oh-my-zsh.sh
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
@@ -49,6 +51,7 @@ export GO111MODULE=on
 
 export GIT_TERMINAL_PROMPT=1
 export GITHUB_USER="Daniel McSheehy"
+git config --global --add --bool push.autoSetupRemote true
 
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
